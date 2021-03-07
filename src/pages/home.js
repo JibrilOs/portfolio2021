@@ -1,11 +1,13 @@
 import React from "react";
 import Button from "../components/Buttons/button";
+import Effect from "../components/effect/effect";
 import "./home.css";
 import pic from "../../src/img/profile2.png";
 
 function Home() {
   return (
     <section className="home-section section">
+      <Effect />
       <div className="container">
         <div className=" row fullscreen align-items-center">
           <div className="home-text">
