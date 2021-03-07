@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Buttons/button";
 import "./home.css";
 import pic from "../../src/img/profile2.png";
 
@@ -11,9 +12,7 @@ function Home() {
             <p>Hello</p>
             <h2>I'm Jibril</h2>
             <h1> Web Developer & Designer </h1>
-            <a href="/" className="outer-shadow hover-in-shadow">
-              More About Me
-            </a>
+            <Button />
           </div>
           <div className="home-img">
             <div className="img-box inner-shadow">
