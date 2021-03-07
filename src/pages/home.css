@@ -1,8 +1,12 @@
 
-.home{}
+
 
 
 /*****home section**/
+.home-section {
+    position: relative;
+}
+
 
  .home-section .fullscreen{
 
@@ -57,6 +61,7 @@ padding: 0.9em;
 .home-section  .home-img .img-box img{width:100%;
 border:10px solid transparent;
 border-radius: 50%;
+
 }
 
 

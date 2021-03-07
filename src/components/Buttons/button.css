@@ -11,7 +11,7 @@
     display: inline-block;
 
  }
- 
+
 
  .btn-1:hover::after{ 
 border-radius: 30px;
