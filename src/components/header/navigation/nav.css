@@ -78,11 +78,16 @@ border-radius: 30px ;
 .nav-menu .copyright{
     position: absolute;
     top: 50%;
-    left: 0;
-    font-size: ;
+    left: -2em;
+    font-size:1.5em;
+    color: var(--text-black-600);
+    transform: rotate(-90deg) translateY(-50%);
+ 
 }
 
-
+.nav-menu .copyright span{
+ word-spacing: 0.2em;
+font-weight: 600;}
 
 /**********************
 navigation menu end
