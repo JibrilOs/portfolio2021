@@ -18,11 +18,7 @@ function Home() {
           </div>
           <div className="home-img">
             <div className="img-box inner-shadow">
-              <img
-                src={pic}
-                alt="profile pics"
-                className="outer-shadow hover-in-shadow"
-              />
+              <img src={pic} alt="profile pics" className="outer-shadow " />
             </div>
           </div>
         </div>
