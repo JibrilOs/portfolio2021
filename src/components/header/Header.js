@@ -17,7 +17,6 @@ function Header() {
   return (
     <div>
       <header className="header">
-     
         <div className="container">
           <div className="row justify-content-between">
             <div className="logo">
@@ -33,7 +32,15 @@ function Header() {
         </div>
       </header>
 
-      {state === true ? <Nav handleClear={handleClear} /> : <Home />}
+      {state === true ? (
+        (
+        <Nav handleClear={handleClear} />
+      )
+      ) : (
+ (
+               <About /> 
+      )
+      )}
     </div>
   );
 }

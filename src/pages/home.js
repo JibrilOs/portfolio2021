@@ -14,7 +14,7 @@ function Home() {
             <p>Hello</p>
             <h2>I'm Jibril</h2>
             <h1> Web Developer & Designer </h1>
-            <Button />
+            <Button text=" More About Me" />
           </div>
           <div className="home-img">
             <div className="img-box inner-shadow">

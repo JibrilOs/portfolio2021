@@ -1,0 +1,97 @@
+/* about section */
+
+
+.about-section{
+    padding: 80px 0 80px;
+    min-height:100vh ;
+}
+
+
+.section-title{
+    padding: 0 15px;
+    flex: 0 0 100%;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2{
+
+display: inline-block;
+font-size: 30px;
+font-weight:700 ;
+color:var(--text-block-900) ;
+text-transform: uppercase;
+margin: 0 ;
+}
+
+.section-title h2::before{
+
+content: attr(data-heading);
+display: block;
+font-size: 16px;
+font-weight: 600;
+color:var(--skin-color1) ;
+
+}
+
+
+.about-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0 15px;
+   
+    
+
+}
+.about-img .img-box{
+        padding: 15px; /****when padding is included in box-shawdowing inset it creats this inner gutter***/
+border-radius: 5px;
+}
+
+.about-img .img-box img{
+border: 10px solid transparent;
+width: 100%;
+border-radius: 5px;
+
+}
+
+.about-info{
+     flex: 0 0 50%; 
+     max-width: 60%;
+       padding: 0 15px;
+
+
+}
+
+.about-info p{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    color: var(--text-black-600);
+}
+.about-info span{
+    font-weight: 600;
+}
+
+.about-btn .btn{display: inline-block; 
+margin:20px 25px 0 0 ; }
+.about-img .social-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+
+.about-img .social-links a{
+    border-radius: 50%;
+    width: 40px;
+    padding: 1px 0;
+    text-align: center;
+    color:var(--text-black-600);
+    line-height: 2.2em;
+}
+
+.about-img .social-links a:hover::after{
+    border-radius: 50%;
+}
