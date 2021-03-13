@@ -3,6 +3,7 @@ import Button from "../components/Buttons/button";
 import Effect from "../components/effect/effect";
 import "./home.css";
 import pic from "../../src/img/profile2.png";
+import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
@@ -14,7 +15,12 @@ function Home() {
             <p>Hello</p>
             <h2>I'm Jibril</h2>
             <h1> Web Developer & Designer </h1>
-            <Button text=" More About Me" />
+            <NavLink
+              to="/about"
+              className=" btn-1 outer-shadow hover-in-shadow"
+            >
+              More About Me
+            </NavLink>
           </div>
           <div className="home-img">
             <div className="img-box inner-shadow">

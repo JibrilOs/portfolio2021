@@ -80,6 +80,7 @@ margin:20px 25px 0 0 ; }
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
+    flex-wrap: wrap;
 
 }
 
@@ -90,8 +91,11 @@ margin:20px 25px 0 0 ; }
     text-align: center;
     color:var(--text-black-600);
     line-height: 2.2em;
+    transition: all 3s;
 }
 
 .about-img .social-links a:hover::after{
     border-radius: 50%;
+        transition: all 3s;
+
 }

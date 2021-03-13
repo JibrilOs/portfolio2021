@@ -89,7 +89,7 @@ function About(props) {
             </a> */}
             <div className="about-btn">
               <Button text="Download CV" link={CV} />
-              <Button text="Hire Me" />
+              <Button text="Hire Me" link={CV} />
             </div>
           </div>
         </div>

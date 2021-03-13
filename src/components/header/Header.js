@@ -6,12 +6,9 @@ import { FaBars } from "react-icons/fa";
 import "./header.css";
 
 function Header() {
-  const [state, setState] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
   const handleClick = () => {
-    setState(true);
-  };
-  const handleClear = () => {
-    setState(false);
+    setNavToggle(!navToggle);
   };
 
   return (
@@ -32,15 +29,7 @@ function Header() {
         </div>
       </header>
 
-      {state === true ? (
-        (
-        <Nav handleClear={handleClear} />
-      )
-      ) : (
- (
-               <About /> 
-      )
-      )}
+      {navToggle === true && <Nav handleClear={handleClick} />}
     </div>
   );
 }
