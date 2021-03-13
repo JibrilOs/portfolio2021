@@ -1,10 +1,10 @@
 .header {
-  width: 100%;
-  padding: 20px 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
+   padding: 20px 15px;
+   position: absolute;
+   width: 100%;
+   top:0;
+   left: 0;
+   z-index: 99;
 
  
 
@@ -13,53 +13,32 @@
 
 /***header logo a beginning****/
 header .logo a {
-  display: inline-block;
-  height: 40px;
-  width: 50px;
-  font-size: 24px;
-  font-weight: 600;
-  color:var(--skin-color1);
-  text-align: center;
-  line-height: 40px;
-  border: 3px solid var(--skin-color1);
-  border-radius:50%;
+   display: inline-block;
+   text-align: center;
+   line-height: 36px;
+   height: 40px;
+   width: 50px;
+   font-size: 24px;
+   color:var(--skin-color1);
+   border-radius: 50%;
+   border:2px solid var(--skin-color1);
+   font-weight: 600;
+   text-transform: uppercase;
 }
 
 /***header logo a ending****/
 header .hamburger-btn {
-  height: 40px;
-  width: 40px;
-  /* box-shadow: 0 0 10px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: all 0.3s ease;
+   height: 40px;
+   width: 40px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   border-radius: 50%;
+   justify-content: center;
+   transition: all 0.3s ease;
 
 }
- /* header .hamburger-btn span{
 
-display: block;
-height: 2px;
-width: 16px;
-background-color: var(--bg-black-900);
-position: relative;
-
-
-} 
- header .hamburger-btn span::before,header .hamburger-btn span::after{
-content: "";
-    position: absolute;
-height: 100%;
-width: 100%;
-background-color:var(--bg-black-900);
-left:0;
-}
-header .hamburger-btn span::before{
-    top:-6px
-}
-*/
 
 /**Creates a radius circle***/
 header .hamburger-btn::after{

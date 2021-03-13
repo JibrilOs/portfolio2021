@@ -1,13 +1,19 @@
 import React from "react";
 import Home from "../../../pages/home";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 import "./nav.css";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
+import About from "../../../pages/about";
 
 function Nav({ handleClear }) {
   return (
-    <Router>
+    <div>
       <nav className="nav-menu">
         <div
           className="close-nav-menu outer-shadow hover-in-shadow"
@@ -18,29 +24,54 @@ function Nav({ handleClear }) {
         <div className="nav-menu-inner">
           <ul>
             <li>
-              <Link to="/" className="inner-shadow active">
+              <NavLink
+                to="/home"
+                className="outer-shadow hover-in-shadow "
+                activeClassName="active"
+                onClick={handleClear}
+              >
                 home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about" className="outer-shadow hover-in-shadow">
+              <NavLink
+                to="/about"
+                className="outer-shadow hover-in-shadow "
+                activeClassName="active "
+                onClick={handleClear}
+              >
                 about
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/services" className="outer-shadow hover-in-shadow">
+              <NavLink
+                to="/services"
+                className="outer-shadow hover-in-shadow"
+                activeClassName="active "
+                onClick={handleClear}
+              >
                 services
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/portfolio" className="outer-shadow hover-in-shadow">
+              <NavLink
+                to="/portfolio"
+                className="outer-shadow hover-in-shadow"
+                activeClassName="active"
+                onClick={handleClear}
+              >
                 portfolio
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" className="outer-shadow hover-in-shadow">
+              <NavLink
+                to="/contact"
+                className="outer-shadow hover-in-shadow"
+                activeClassName="active"
+                onClick={handleClear}
+              >
                 contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -52,13 +83,7 @@ function Nav({ handleClear }) {
           {""} <span> 2021 josdev</span>
         </p>
       </nav>
-
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
+    </div>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./button.css";
+import { NavLink } from "react-router-dom";
 
 // const btn1 = {
 //   padding: "10px 25px",
@@ -13,11 +14,11 @@ import "./button.css";
 //   display: "inline-block",
 // };
 
-function Button() {
+function Button({ text, link }) {
   return (
     <div className="btn">
-      <a href="/" className="btn-1 outer-shadow hover-in-shadow">
-        More About Me
+      <a href={link} className="btn-1 outer-shadow hover-in-shadow" >
+         {text}
       </a>
     </div>
   );
