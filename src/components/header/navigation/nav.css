@@ -92,7 +92,7 @@ font-weight: 600;}
 /**********************
 navigation menu end
 ***********************/
-.active{
+.nav-menu .active{
 box-shadow: var(--inner-shadow);
 
 

@@ -1,15 +1,8 @@
 import React from "react";
-import Home from "../../../pages/home";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./nav.css";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
-import About from "../../../pages/about";
 
 function Nav({ handleClear }) {
   return (

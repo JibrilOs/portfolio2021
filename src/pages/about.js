@@ -8,7 +8,6 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import CV from "./cv.pdf";
-
 import "./about.css";
 import pic from "../img/profile2.png";
 
@@ -21,6 +20,7 @@ function About(props) {
             <h2 data-heading="Main Info">About Me</h2>
           </div>
         </div>
+        {/* !about Img and social media icons start */}
         <div className="row">
           <div className="about-img">
             <div className="img-box inner-shadow">
@@ -84,15 +84,34 @@ function About(props) {
               cupidatat non proident, sunt in culpa qui officia deserunt mollit
               anim id est laborum.
             </p>
-            {/* <a href="cv.pdf" className="outer-shadow hover-in-shadow ">
-              Download Cv
-            </a> */}
+
             <div className="about-btn">
               <Button text="Download CV" link={CV} />
               <Button text="Hire Me" link={CV} />
             </div>
           </div>
         </div>
+
+        {/* about Img and social media icons End*/}
+
+        {/* about tabs start */}
+        <div className="row">
+          <div className="about-tabs">
+            <span
+              className="tab-item outer-shadow active"
+              data-target=".skills"
+            >
+              Skills
+            </span>
+            <span className="tab-item " data-target=".experience">
+              experience
+            </span>
+            <span className="tab-item" data-target=".education">
+              education
+            </span>
+          </div>
+        </div>
+        {/* about tabs End*/}
       </div>
     </section>
   );

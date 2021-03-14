@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Nav from "./navigation/Nav";
-import Home from "../../pages/home";
-import About from "../../pages/about";
 import { FaBars } from "react-icons/fa";
 import "./header.css";
 
