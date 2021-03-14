@@ -17,6 +17,7 @@ function Home() {
             <h1> Web Developer & Designer </h1>
             <NavLink
               to="/about"
+              exact
               className=" btn-1 outer-shadow hover-in-shadow"
             >
               More About Me

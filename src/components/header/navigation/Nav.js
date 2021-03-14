@@ -25,10 +25,11 @@ function Nav({ handleClear }) {
           <ul>
             <li>
               <NavLink
-                to="/home"
+                to="/"
                 className="outer-shadow hover-in-shadow "
                 activeClassName="active"
                 onClick={handleClear}
+                exact
               >
                 home
               </NavLink>
@@ -39,6 +40,7 @@ function Nav({ handleClear }) {
                 className="outer-shadow hover-in-shadow "
                 activeClassName="active "
                 onClick={handleClear}
+                exact
               >
                 about
               </NavLink>
@@ -49,6 +51,7 @@ function Nav({ handleClear }) {
                 className="outer-shadow hover-in-shadow"
                 activeClassName="active "
                 onClick={handleClear}
+                exact
               >
                 services
               </NavLink>
@@ -59,6 +62,7 @@ function Nav({ handleClear }) {
                 className="outer-shadow hover-in-shadow"
                 activeClassName="active"
                 onClick={handleClear}
+                exact
               >
                 portfolio
               </NavLink>
@@ -69,6 +73,7 @@ function Nav({ handleClear }) {
                 className="outer-shadow hover-in-shadow"
                 activeClassName="active"
                 onClick={handleClear}
+                exact
               >
                 contact
               </NavLink>
